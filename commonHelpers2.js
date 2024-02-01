@@ -1,4 +1,4 @@
-import{d as x,b as $,h as C,s as W,a as v,c as U,o as N,n as H}from"./assets/change-theme-0f81a5fb.js";import{i as y}from"./assets/vendor-0a7943b3.js";const k=async e=>{const t=i=>{const n=i;if(n==="Muscles")return n.toLowerCase();if(n==="Body parts")return"bodypart";if(n==="Equipment")return n.toLowerCase()},s={...e},a=await x.getFilters(s),r=a.data.results;return $(a.data.totalPages,e.page),r.reduce((i,n)=>i+` <li class="render-page-one-item" data-filter="${t(e.filter)}" data-name="${n.name}">
+import{d as x,b as $,h as C,s as W,a as v,c as U,o as N,n as H}from"./assets/change-theme-1b2d6d8a.js";import{i as y}from"./assets/vendor-0a7943b3.js";const k=async e=>{const t=i=>{const n=i;if(n==="Muscles")return n.toLowerCase();if(n==="Body parts")return"bodypart";if(n==="Equipment")return n.toLowerCase()},s={...e},a=await x.getFilters(s),r=a.data.results;return $(a.data.totalPages,e.page),r.reduce((i,n)=>i+` <li class="render-page-one-item" data-filter="${t(e.filter)}" data-name="${n.name}">
             <img src="${n.imgUrl}" alt="" />
             <div class="render-page-one-img-container">
               <p class="render-page-one-item-title">${n.name}</p>
@@ -12,7 +12,7 @@ import{d as x,b as $,h as C,s as W,a as v,c as U,o as N,n as H}from"./assets/cha
 				<!-- <div class="workout-card__rating-block"> -->
 				<p class="workout-card__rating-text"> ${i.toFixed(1)} </p>
 				<svg class="workout-card__rating-icon">
-					<use class="icon-star" href="../src/img/symbol-defs.svg#icon-star-gold"></use>
+					<use class="icon-star" href="./src/img/symbol-defs.svg#icon-star-gold"></use>
 				</svg>
 				<svg class="workout-card__basket-icon" style="display: none">
 					<use class="icon-basket" href="../src/img/symbol-defs.svg#icon-trash"></use>
@@ -22,14 +22,14 @@ import{d as x,b as $,h as C,s as W,a as v,c as U,o as N,n as H}from"./assets/cha
 			<button type="button" class="workout-card__link-start" data-id="${s}">
 				Start
 				<svg class="workout-card__link-icon" width="16" height="16">
-					<use class="icon-arrow" href="../src/img/symbol-defs.svg#icon-arrow"></use>
+					<use class="icon-arrow" href="./src/img/symbol-defs.svg#icon-arrow"></use>
 				</svg>
 			</button>
 		</div>
 
 		<h3 class="workout-card__title">
 			<svg class="workout-card__title-icon">
-				<use class="icon-icon" href="../src/img/symbol-defs.svg#icon-icon"></use>
+				<use class="icon-icon" href="./src/img/symbol-defs.svg#icon-icon"></use>
 			</svg>
 			${r[0].toUpperCase()+r.slice(1)}
 		</h3>
