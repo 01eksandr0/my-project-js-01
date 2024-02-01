@@ -3,7 +3,7 @@ const checkFilter = obg => {
   if (obg.bodypart) return ['bodypart', obg.bodypart];
   if (obg.equipment) return ['equipment', obg.equipment];
 };
-import icon from '/img/symbol-defs.svg';
+import icon from '../img/symbol-defs.svg';
 export function createsStringOfWorkoutCardElements(arrayOfObjects, params) {
   return arrayOfObjects
     .map(({ _id, bodyPart, name, target, rating, burnedCalories, time }) => {
