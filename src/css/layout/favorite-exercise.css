@@ -1,0 +1,120 @@
+.favorites-exercise-section {
+  background-color: #e8e8e8;
+  border-radius: 30px;
+  margin-bottom: 16px;
+  opacity: 1;
+}
+.favorites-exercise-container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  gap: 20px;
+}
+
+.favorites-exercise-container .workout-card__rating-block {
+  border: none;
+  display: flex;
+  margin-left: 5px;
+  background-color: #ffffff;
+  color: #e8e8e8;
+}
+.favorites-exercise-title {
+  text-align: start;
+  color: #000000;
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 32px;
+  letter-spacing: -2px;
+  padding: 40px 0 0 20px;
+}
+
+.favorites-exercise-not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.favorites-exercise-not-found {
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  padding: 0 45px 0 45px;
+}
+
+.favorites-exercise-img {
+  width: 85px;
+
+  padding: 70px 0 28px 0;
+}
+
+.icon-basket {
+  fill: #e8e8e8;
+  stroke: #000000;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .favorites-exercise-section {
+    height: 928px;
+  }
+
+  .favorites-exercise-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+    gap: 14px;
+    max-height: 720px;
+  }
+
+  .favorites-exercise-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  .favorites-exercise-container::-webkit-scrollbar-thumb {
+    background-color: #7e847f;
+    border-radius: 10px;
+  }
+  .favorites-exercise-container::-webkit-scrollbar-track {
+    background-color: #d4d4d4;
+    border-radius: 10px;
+  }
+  .favorites-exercise-title {
+    font-size: 44px;
+    line-height: 48px;
+    padding: 63px 0 0 50px;
+  }
+
+  .favorites-exercise-not-found {
+    font-size: 18px;
+    line-height: 24px;
+
+    padding: 0 91px 0 91px;
+  }
+
+  .favorites-exercise-img {
+    width: 115px;
+
+    padding-top: 200px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .favorites-exercise-section {
+    height: 687px;
+  }
+  .favorites-exercise-container {
+    max-height: 480px;
+  }
+  .favorites-exercise-not-found {
+    padding: 0 437px 0 427px;
+  }
+  .favorites-exercise-img {
+    padding-top: 146px;
+  }
+}

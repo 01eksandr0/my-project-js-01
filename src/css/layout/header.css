@@ -1,0 +1,158 @@
+.page-list {
+  display: none;
+}
+
+.sm-list {
+  display: none;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 99999;
+  left: 0;
+  top: 56px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.logo-link {
+  color: #1b1b1b;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; /* 112.5% */
+  letter-spacing: -0.32px;
+}
+
+.button-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1c2225;
+  border: none;
+  background-color: transparent;
+}
+
+.icon-burger {
+  width: 32px;
+  height: 16px;
+  stroke: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    top: 36px;
+  }
+  .button-burger {
+    display: none;
+  }
+
+  .header-nav {
+    margin: 0 48px;
+  }
+
+  .logo-link {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px; /* 100% */
+    letter-spacing: -0.56px;
+    margin-top: 28px;
+  }
+
+  .page-list {
+    display: flex;
+    height: 52px;
+    border-radius: 60px;
+    background: #7e847f;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    margin-top: 16px;
+  }
+
+  .active {
+    display: flex;
+    padding: 6px 26px;
+    border-radius: 30px;
+    justify-content: center;
+    background-color: #ffff;
+  }
+
+  .page-list-item-disable {
+    display: flex;
+    padding: 6px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-link {
+    color: #1b1b1b;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+
+  .page-link.fav {
+    color: #f6f6f6;
+  }
+  .sm-list {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    animation: myAnim 1s ease 1 normal forwards;
+  }
+
+  .sm-list-item {
+    width: 46px;
+    height: 46px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgba(126, 132, 127, 0.2);
+  }
+
+  .sm-link {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 8px;
+  }
+  .icon {
+    height: 28px;
+    fill: #7e847f;
+    transition: 0.2s;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .button-burger {
+    display: none;
+  }
+
+  .logo-link {
+    margin-top: 38px;
+  }
+
+  .page-list {
+    margin-top: 24px;
+  }
+
+  .sm-list {
+    margin-top: 28px;
+  }
+
+  .header-nav {
+    margin: 0 64px;
+  }
+
+  .icon:hover,
+  .icon:focus {
+    fill: #5f6560;
+  }
+}
