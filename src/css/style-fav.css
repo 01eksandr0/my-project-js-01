@@ -5,14 +5,10 @@
 
 @import url(./layout/header.css);
 @import url(./layout/change-theme.css);
-@import url(./layout/home-hero-section.css);
 @import url(./layout/favorite-section.css);
-@import url(./layout/render-page-one-section.css);
-@import url(./layout/important-minutes.css);
-@import url(./layout/footer.css);
+@import url(./layout/favorite-exercise.css);
 
 @import url(./layout/workout-card.css);
-@import url(./layout/form-search.css);
 @import url(./layout/burger-menu.css);
 @import url(./layout/modal-trane.css);
 @import url(./layout/modal-rating.css);

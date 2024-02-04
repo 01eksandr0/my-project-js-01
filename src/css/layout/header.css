@@ -13,6 +13,9 @@
   left: 0;
   top: 56px;
 }
+.favorite-header {
+  position: static;
+}
 
 .header-nav {
   display: flex;
@@ -48,6 +51,10 @@
 @media screen and (min-width: 768px) {
   .header {
     top: 36px;
+  }
+  .favorite-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .button-burger {
     display: none;
