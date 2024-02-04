@@ -2,6 +2,7 @@ import iziToast from 'izitoast';
 import { createStarsMarkup } from './getMarkup/createStarsMarkup';
 import { openModalRating } from './modal-rating';
 import { apiInstance } from './services/api';
+import icons from '../img/symbol-defs.svg';
 
 const modal = document.querySelector('.modal-trane-background');
 const openModallist = document.querySelector('.render-page-one-list');
@@ -12,7 +13,7 @@ const getElemById = async id => {
   const markup = `<div class="modal-trane">
     <button class="modal-trane-btn-close" type="button">
       <svg height="28" width="28" style="stroke: black">
-        <use href="././img/symbol-defs.svg#icon-x"></use>
+        <use href="${icons}#icon-x"></use>
       </svg>
     </button>
     <div class="modal-trane-img-container">
@@ -20,7 +21,7 @@ const getElemById = async id => {
     </div>
     <div>
       <div class="modal-trane-name-rating">
-        <h2 class="modal-trane-title">Air bake</h2>
+        <h2 class="modal-trane-title">${response.name}</h2>
         <div class="modal-trane-rating-star">
           <p class="modal-trane-ratind">${response.rating}</p>
           <ul class="modal-trane-list-stars">${createStarsMarkup(
@@ -54,7 +55,8 @@ const getElemById = async id => {
       <ul class="modal-trane-list-btn">
         <li>
           <button class="modal-trane-btn-add-favorites" type="button">
-            Add&nbsp;to&nbsp;favorites&nbsp;&#x2661;
+            Add&nbsp;to&nbsp;favorites&nbsp; <svg height="24" width="24">
+            <use href="${icons}#icon-heart"></use> </svg>
           </button>
         </li>
         <li>

@@ -6,6 +6,7 @@
 }
 .workout-card__button-workout {
   border: none;
+  padding: 4px;
   border-radius: 15px;
   background: #7e847f;
   color: #f6f6f6;
@@ -106,6 +107,7 @@
 
 .workout-card__link-icon {
   stroke: #1b1b1b;
+  fill: #1b1b1b;
   pointer-events: none;
 }
 

@@ -1,13 +1,13 @@
-import icon from '../../img/symbol-defs.svg';
+import icons from '../../img/symbol-defs.svg';
 export const createStarsMarkup = int => {
   const starsMarkup = [
-    `${icon}#icon-star`,
-    `${icon}#icon-star`,
-    `${icon}#icon-star`,
-    `${icon}#icon-star`,
-    `${icon}#icon-star`,
+    `${icons}#icon-star`,
+    `${icons}#icon-star`,
+    `${icons}#icon-star`,
+    `${icons}#icon-star`,
+    `${icons}#icon-star`,
   ];
-  const goldStar = `${icon}#icon-star-gold`;
+  const goldStar = `${icons}#icon-star-gold`;
   const number = parseFloat(int);
   starsMarkup.forEach((_, index) => {
     if (index + 1 <= number) starsMarkup[index] = goldStar;
