@@ -17,82 +17,12 @@
     
     <script type="module" crossorigin src="/my-project-js-01/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/my-project-js-01/assets/vendor-0a7943b3.js">
-    <link rel="modulepreload" crossorigin href="/my-project-js-01/assets/change-theme-2b4e2ccf.js">
+    <link rel="modulepreload" crossorigin href="/my-project-js-01/assets/change-theme-be6c2e40.js">
     <link rel="stylesheet" href="/my-project-js-01/assets/vendor-e5212ee8.css">
-    <link rel="stylesheet" href="/my-project-js-01/assets/change-theme-23f5c14b.css">
+    <link rel="stylesheet" href="/my-project-js-01/assets/favorit-0c6fbb04.css">
   </head>
   <body>
-    <div class="burger-menu-block is-hidden no-scroll">
-  <div class="burger-menu">
-    <div class="burger-menu__header-mobile-menu">
-      <a class="burger-menu__link" href="#">energy.flow</a>
-      <button class="burger-menu__btn-close" type="button">
-        <svg class="burger-menu__icon-close" width="20" height="20">
-          <use href="/my-project-js-01/assets/symbol-defs-092448a0.svg#icon-x"></use>
-        </svg>
-      </button>
-    </div>
-    <div>
-      <ul class="burger-menu__pages-list">
-        <li class="burger-menu__pages-list__item">
-          <a
-            class="burger-menu__pages-list__item__link page-active"
-            href="./index.html"
-            >Home</a
-          >
-        </li>
-        <li class="burger-menu__pages-list__item">
-          <a class="burger-menu__pages-list__item__link" href="./favorit.html"
-            >Favorites</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div>
-      <ul class="burger-menu__social-link-list">
-        <li class="burger-menu__social-link-list__item">
-          <a class="burger-menu__social-link-list__link" href="#">
-            <svg
-              class="icon-close"
-              width="25"
-              height="25"
-              style="fill: #f6f6f6"
-            >
-              <use href="/my-project-js-01/assets/symbol-defs-092448a0.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="burger-menu__social-link-list__item">
-          <a class="burger-menu__social-link-list__link" href="#">
-            <svg
-              class="icon-close"
-              width="25"
-              height="25"
-              style="fill: #f6f6f6"
-            >
-              <use href="/my-project-js-01/assets/symbol-defs-092448a0.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="burger-menu__social-link-list__item">
-          <a class="burger-menu__social-link-list__link" href="#">
-            <svg
-              class="icon-close"
-              width="25"
-              height="25"
-              style="fill: #f6f6f6"
-            >
-              <use href="/my-project-js-01/assets/symbol-defs-092448a0.svg#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-    <header class="header" style="position: static">
+    <header class="header favorite-header">
   <div class="container">
     <nav class="header-nav">
       <a class="logo-link" href="#">energy.flow</a>
@@ -108,7 +38,7 @@
       </ul>
 
       <ul class="sm-list">
-        <li>
+        <li class="sm-list__item-swith-theme">
           <label class="switch">
             <input class="change" type="checkbox" />
             <span class="slider round"></span>
@@ -156,6 +86,7 @@
     </nav>
   </div>
 </header>
+
 
     <main>
       <section class="favorite-hero-section">
@@ -230,6 +161,77 @@
 </section>
 
     </main>
+
+    <div class="burger-menu-block is-hidden no-scroll">
+  <div class="burger-menu">
+    <div class="burger-menu__header-mobile-menu">
+      <a class="burger-menu__link" href="#">energy.flow</a>
+      <button class="burger-menu__btn-close" type="button">
+        <svg class="burger-menu__icon-close" width="20" height="20">
+          <use href="/my-project-js-01/assets/symbol-defs-092448a0.svg#icon-x"></use>
+        </svg>
+      </button>
+    </div>
+    <div>
+      <ul class="burger-menu__pages-list">
+        <li class="burger-menu__pages-list__item">
+          <a
+            class="burger-menu__pages-list__item__link page-active"
+            href="./index.html"
+            >Home</a
+          >
+        </li>
+        <li class="burger-menu__pages-list__item">
+          <a class="burger-menu__pages-list__item__link" href="./favorit.html"
+            >Favorites</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <ul class="burger-menu__social-link-list">
+        <li class="burger-menu__social-link-list__item">
+          <a class="burger-menu__social-link-list__link" href="#">
+            <svg
+              class="icon-close"
+              width="25"
+              height="25"
+              style="fill: #f6f6f6"
+            >
+              <use href="/my-project-js-01/assets/symbol-defs-092448a0.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="burger-menu__social-link-list__item">
+          <a class="burger-menu__social-link-list__link" href="#">
+            <svg
+              class="icon-close"
+              width="25"
+              height="25"
+              style="fill: #f6f6f6"
+            >
+              <use href="/my-project-js-01/assets/symbol-defs-092448a0.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="burger-menu__social-link-list__item">
+          <a class="burger-menu__social-link-list__link" href="#">
+            <svg
+              class="icon-close"
+              width="25"
+              height="25"
+              style="fill: #f6f6f6"
+            >
+              <use href="/my-project-js-01/assets/symbol-defs-092448a0.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
     <div class="modal-trane-background"></div>
 
     <div class="modal-rating-background">
@@ -239,7 +241,7 @@
         <use href="/my-project-js-01/assets/symbol-defs-092448a0.svg#icon-x"></use>
       </svg>
     </button>
-    <form class="modal-rating-form">
+    <form class="modal-rating-form" data-id="1">
       <p class="modal-rating-title">Rating</p>
       <ul class="modal-rating-radio-list">
         <li><p class="modal-rating-rating">0.0</p></li>
@@ -319,6 +321,7 @@
     </form>
   </div>
 </div>
+
 
     
   </body>
