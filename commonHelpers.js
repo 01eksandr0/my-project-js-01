@@ -1,7 +1,7 @@
-import{h as p,b as L,a as v,c as S,o as $,n as E}from"./assets/change-theme-fbe368a5.js";import"./assets/vendor-0a7943b3.js";const i=document.querySelector(".favorites-exercise-container"),u=document.querySelector(".render-btn-list-pagination"),b="favorites";let s=null;const P=getComputedStyle(document.querySelector("body")).width,M=parseInt(P)<768?8:9;let k=1;const d=8,f=async t=>{try{return(await v.get(`/exercises/${t}`)).data}catch(a){console.log(a)}},I=()=>{try{s=JSON.parse(localStorage.getItem(b))}catch(t){console.log(t)}return s},q=()=>{i.innerHTML="";const t=`<div class="favorites-exercise-not-found-container">
+import{h as v,b as $,a as k,i as c,c as S,o as E,n as P}from"./assets/change-theme-ab62f85d.js";import"./assets/vendor-0a7943b3.js";const M="/project-03/assets/favorite-dumbbell-325968d2.png",i=document.querySelector(".favorites-exercise-container"),m=document.querySelector(".render-btn-list-pagination"),b="favorites";let s=null;const I=getComputedStyle(document.querySelector("body")).width,q=parseInt(I)<768?8:9;let _=1;const u=8,f=async t=>{try{return(await k.get(`/exercises/${t}`)).data}catch(a){console.log(a)}},T=()=>{try{s=JSON.parse(localStorage.getItem(b))}catch(t){console.log(t)}return s},B=()=>{i.innerHTML="";const t=`<div class="favorites-exercise-not-found-container">
         <img
           class="favorites-exercise-img"
-          src="././img/favorite-exercise/favorite-dumbbell.png"
+          src="${M}"
           alt="dumbbell"
         />
         <h3 class="favorites-exercise-not-found">
@@ -9,19 +9,19 @@ import{h as p,b as L,a as v,c as S,o as $,n as E}from"./assets/change-theme-fbe3
           To get started, you can add exercises that you like to your favorites
           for easier access in the future.
         </h3>
-      </div>`;i.insertAdjacentHTML("beforeend",t),p(u)},_=t=>{i.innerHTML="";const a=t.reduce((e,{_id:o,bodyPart:r,name:n,target:l,burnedCalories:h,time:x})=>e+`
+      </div>`;i.insertAdjacentHTML("beforeend",t),v(m)},y=t=>{i.innerHTML="";const a=t.reduce((e,{_id:o,bodyPart:r,name:n,target:d,burnedCalories:x,time:L})=>e+`
         <li class="workout-card__item">
           <div class="workout-card__block">
             <div class="workout-card__block-top">
               <div class="workout-card__block_button-rating">
-                <button type="button" class="workout-card__button-workout">
+                <p class="workout-card__text-workout">
                   Workout
-                </button>
+                </p>
                 <div class="workout-card__rating-block">
-                   <svg class="workout-card__basket-icon ${o}">
+                   <svg class="workout-card__basket-icon ${o}" width="24" height="24">
                     <use
                       class="icon-basket ${o}"
-                      href="././img/symbol-defs.svg#icon-trash"
+                      href="${c}#icon-trash"
                     ></use></svg>
                 </div>
               </div>
@@ -31,17 +31,17 @@ import{h as p,b as L,a as v,c as S,o as $,n as E}from"./assets/change-theme-fbe3
                 <svg class="workout-card__link-icon" width="16" height='16'>
                   <use
                     class="icon-arrow"
-                    href="././img/symbol-defs.svg#icon-arrow"
+                    href="${c}#icon-arrow"
                   ></use>
                 </svg>
               </button>
             </div>
 
             <h3 class="workout-card__title">
-              <svg class="workout-card__title-icon">
+              <svg class="workout-card__title-icon"  width="24" height="24">
                 <use
                   class="icon-icon"
-                  href="././img/symbol-defs.svg#icon-icon"
+                  href="${c}#icon-icon"
                 ></use>
               </svg>
               ${n[0].toUpperCase()+n.slice(1)}
@@ -51,7 +51,7 @@ import{h as p,b as L,a as v,c as S,o as $,n as E}from"./assets/change-theme-fbe3
               <li class="workout-card__statistic_item">
                 <p class="workout-card__statistic_text">
                   <span class="secondary-color-text">Burned calories:</span>
-                  ${h} / ${x} min
+                  ${x} / ${L} min
                 </p>
               </li>
               <li class="workout-card__statistic_item">
@@ -62,15 +62,15 @@ import{h as p,b as L,a as v,c as S,o as $,n as E}from"./assets/change-theme-fbe3
               </li>
               <li class="workout-card__statistic_item">
                 <p class="workout-card__statistic_text">
-                  <span class="secondary-color-text">Target:</span> ${l}
+                  <span class="secondary-color-text">Target:</span> ${d}
                 </p>
               </li>
             </ul>
           </div>
-        </li>`,"");i.insertAdjacentHTML("beforeend",a)};async function m(){if(I(),s!==null&&M===8&&s.length>8)B(k);else if(s!==null&&s.length!==0){const t=await Promise.all(s.map(a=>f(a)));_(t),p(u)}else q()}m();const T=t=>{t.preventDefault();const a=t.target;if(t.target.closest(".icon-basket ")){const o=a.classList[1],r=s.filter(n=>n!==o);localStorage.setItem(b,JSON.stringify(r)),m()}};i.addEventListener("click",T);async function B(t){const a=Math.ceil(s.length/d);L(a,t);const e=(t-1)*d,o=e+d,r=s.slice(e,o),n=await Promise.all(r.map(l=>f(l)));_(n)}u.addEventListener("click",t=>{k=Number(t.target.innerHTML),m()});const C=document.querySelector(".favorites-exercise-container"),c=document.querySelector(".modal-trane-background"),g=()=>{c.classList.remove("modal-trane-background-active"),document.removeEventListener("click",y),document.removeEventListener("keydown",w)},y=t=>{t.target===c&&g()},w=t=>{t.key==="Escape"&&g()},H=async t=>{const e=(await v.get(`exercises/${t}`)).data,o=`<div class="modal-trane">
+        </li>`,"");i.insertAdjacentHTML("beforeend",a)};async function p(){if(T(),s!==null&&q===8&&s.length>8)H(_);else if(s!==null&&s.length!==0){const t=await Promise.all(s.map(a=>f(a)));y(t),v(m)}else B()}p();const C=t=>{t.preventDefault();const a=t.target;if(t.target.closest(".icon-basket ")){const o=a.classList[1],r=s.filter(n=>n!==o);localStorage.setItem(b,JSON.stringify(r)),p()}};i.addEventListener("click",C);async function H(t){const a=Math.ceil(s.length/u);$(a,t);const e=(t-1)*u,o=e+u,r=s.slice(e,o),n=await Promise.all(r.map(d=>f(d)));y(n)}m.addEventListener("click",t=>{_=Number(t.target.innerHTML),p()});const A=document.querySelector(".favorites-exercise-container"),l=document.querySelector(".modal-trane-background"),g=()=>{l.classList.remove("modal-trane-background-active"),document.removeEventListener("click",h),document.removeEventListener("keydown",w)},h=t=>{t.target===l&&g()},w=t=>{t.key==="Escape"&&g()},D=async t=>{const e=(await k.get(`exercises/${t}`)).data,o=`<div class="modal-trane">
     <button class="modal-trane-btn-close" type="button">
       <svg height="28" width="28" style="stroke: black">
-        <use href="./img/symbol-defs.svg#icon-x"></use>
+        <use href="${c}#icon-x"></use>
       </svg>
     </button>
     <div class="modal-trane-img-container">
@@ -120,5 +120,5 @@ import{h as p,b as L,a as v,c as S,o as $,n as E}from"./assets/change-theme-fbe3
         </li>
       </ul>
     </div>
-  </div>`;c.innerHTML=o,document.querySelector(".modal-trane-btn-close").addEventListener("click",g),document.querySelector(".modal-trane-btn-rating").addEventListener("click",$)};C.addEventListener("click",t=>{t.target.classList.contains("workout-card__link-start")&&(H(t.target.dataset.id),c.classList.add("modal-trane-background-active"),document.addEventListener("click",y),document.addEventListener("keydown",w))});E();
+  </div>`;l.innerHTML=o,document.querySelector(".modal-trane-btn-close").addEventListener("click",g),document.querySelector(".modal-trane-btn-rating").addEventListener("click",E)};A.addEventListener("click",t=>{t.target.classList.contains("workout-card__link-start")&&(D(t.target.dataset.id),l.classList.add("modal-trane-background-active"),document.addEventListener("click",h),document.addEventListener("keydown",w))});P();
 //# sourceMappingURL=commonHelpers.js.map
