@@ -1,7 +1,5 @@
-const changeThemeBtn = document.querySelector('.change');
-
-const changeTheme = () => {
-  const link = document.getElementById('change');
-  console.log(link);
-};
-changeThemeBtn.addEventListener('click', changeTheme);
+const body = document.body;
+const change = document.querySelector('.change');
+change.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+});
