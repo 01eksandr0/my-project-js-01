@@ -1,4 +1,4 @@
-import{c as C,b as F,a as I,i as p,h as T,s as D,g as _,o as z,n as H}from"./assets/change-theme-66f2c906.js";import{i as f}from"./assets/vendor-0a7943b3.js";const v=async e=>{const t=l=>{const n=l;if(n==="Muscles")return n.toLowerCase();if(n==="Body parts")return"bodypart";if(n==="Equipment")return n.toLowerCase()},s={...e},r=await C.getFilters(s),o=r.data.results;return F(r.data.totalPages,e.page),o.reduce((l,n)=>l+` <li class="render-page-one-item" data-filter="${t(e.filter)}" data-name="${n.name}">
+import{c as C,b as F,a as I,i as p,h as T,s as D,g as _,o as z,n as H}from"./assets/change-theme-31d60e06.js";import{i as f}from"./assets/vendor-0a7943b3.js";const v=async e=>{const t=l=>{const n=l;if(n==="Muscles")return n.toLowerCase();if(n==="Body parts")return"bodypart";if(n==="Equipment")return n.toLowerCase()},s={...e},r=await C.getFilters(s),o=r.data.results;return F(r.data.totalPages,e.page),o.reduce((l,n)=>l+` <li class="render-page-one-item" data-filter="${t(e.filter)}" data-name="${n.name}">
             <img src="${n.imgUrl}" alt="" />
             <div class="render-page-one-img-container">
               <p class="render-page-one-item-title">${n.name}</p>
@@ -21,7 +21,7 @@ import{c as C,b as F,a as I,i as p,h as T,s as D,g as _,o as z,n as H}from"./ass
 			</div>
 			<button type="button" class="workout-card__link-start" data-id="${s}">
 				Start
-				<svg class="workout-card__link-icon" width="16" height="16" style="stroke: #000; fill:#000">
+				<svg class="workout-card__link-icon" width="16" height="16" >
 					<use class="icon-arrow" href="${p}#icon-arrow"></use>
 				</svg>
 			</button>
