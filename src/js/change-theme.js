@@ -46,12 +46,12 @@ changeThemeBtn.addEventListener('change', function () {
   onClickBtn();
 });
 
-// function changeImgFaforiteSection() {
-//   if (localStorage.getItem('darkThemeActivated')) {
-//     oldImg.srcset = './img/favorite-hero/favorite-hero-img.jpg';
-//   } else {
-//     oldImg.srcset = './img/black-theme-img/favorite-img-desktop.jpg';
-//   }
-// }
+function changeImgFaforiteSection() {
+  if (localStorage.getItem('darkThemeActivated')) {
+    oldImg.srcset = './img/favorite-hero/favorite-hero-img.jpg';
+  } else {
+    oldImg.srcset = './img/black-theme-img/favorite-img-desktop.jpg';
+  }
+}
 
-// changeThemeBtnFavorit.addEventListener('click', changeImgFaforiteSection());
+changeThemeBtnFavorit.addEventListener('click', changeImgFaforiteSection);
