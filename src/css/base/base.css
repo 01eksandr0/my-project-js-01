@@ -4,7 +4,8 @@
   --main-dark-color: #000;
   --main-background-color: #f6f6f6;
   --gray-main-background: #7e847f;
-  --main-cont-background: #ffffff;
+  --main-cont-background: #f8f8f8;
+  --main-render-background: #e8e8e8;
   --workout-backgroun: #ffffff;
   font-size: 16px;
   line-height: 1.4;
@@ -15,6 +16,7 @@
   --main-dark-color: #f6f6f6;
   --main-background-color: rgb(7, 1, 61);
   --main-cont-background: rgb(11, 2, 83);
+  --main-render-background: rgb(11, 2, 83);
   --gray-main-background: rgb(11, 2, 83);
   --workout-backgroun: rgb(15, 3, 104);
 }

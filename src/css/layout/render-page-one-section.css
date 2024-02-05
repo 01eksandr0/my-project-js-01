@@ -1,5 +1,5 @@
 .render-page-one {
-  background-color: var(--main-cont-background);
+  background-color: var(--main-render-background);
   border-radius: 30px;
   padding: 40px 0;
   display: flex;

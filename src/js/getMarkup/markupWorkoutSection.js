@@ -67,17 +67,3 @@ export function createsStringOfWorkoutCardElements(arrayOfObjects, params) {
     })
     .join('');
 }
-
-// function createsStringOfPaginationElements(num) {
-//   let str = '';
-
-//   for (let i = 0; i < num; i++) {
-//     str += `<li>
-// 		<button class="render-pagination-btn" type="button" value="${i + 1}"> ${
-//       i + 1
-//     } </button>
-// 		</li>`;
-//   }
-
-//   return str;
-// }
