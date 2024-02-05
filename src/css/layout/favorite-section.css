@@ -12,7 +12,7 @@
   max-width: 335px;
   padding: 40px 20px;
   border-radius: 30px;
-  background: #7e847f;
+  background: var(--gray-main-background);
   display: flex;
   gap: 12px;
   align-items: start;
@@ -60,7 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: var(--workout-backgroun);
   border-radius: 30px;
 }
 .favorite__white-card-list {
@@ -70,14 +70,18 @@
   align-items: start;
   justify-content: start;
 }
+.favorite__white-card-list svg {
+  fill: var(--main-dark-color);
+  stroke: var(--main-dark-color);
+}
 .white-card__headline {
-  color: #1b1b1b;
+  color: var(--main-dark-color);
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
 }
 .white-card__text {
-  color: rgba(27, 27, 27, 0.6);
+  color: var(--main-dark-color);
   font-size: 14px;
   line-height: 18px;
 }

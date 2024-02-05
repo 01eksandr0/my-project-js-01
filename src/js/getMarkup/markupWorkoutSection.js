@@ -27,7 +27,7 @@ export function createsStringOfWorkoutCardElements(arrayOfObjects, params) {
 			</div>
 			<button type="button" class="workout-card__link-start" data-id="${_id}">
 				Start
-				<svg class="workout-card__link-icon" width="16" height="16" style="stroke: #000; fill:#000">
+				<svg class="workout-card__link-icon" width="16" height="16" >
 					<use class="icon-arrow" href="${icons}#icon-arrow"></use>
 				</svg>
 			</button>

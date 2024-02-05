@@ -23,7 +23,7 @@ export const getElemById = async id => {
     : 'Add&nbsp;to&nbsp;favorites&nbsp;';
   const markup = `<div class="modal-trane">
     <button class="modal-trane-btn-close" type="button">
-      <svg height="28" width="28" style="stroke: black">
+      <svg height="28" width="28" >
         <use href="${icons}#icon-x"></use>
       </svg>
     </button>

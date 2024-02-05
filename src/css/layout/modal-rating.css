@@ -15,12 +15,12 @@
   width: 335px;
   height: 357px;
   border-radius: 20px;
-  background: #f6f6f6;
+  background: var(--workout-backgroun);
   position: relative;
   padding: 40px 20px;
 }
 .modal-rating-svg-close {
-  stroke: black;
+  stroke: var(--main-dark-color);
 }
 .modal-rating-btn-close {
   border: none;
@@ -33,7 +33,7 @@
   right: 14px;
 }
 .modal-rating-title {
-  color: rgba(27, 27, 27, 0.4);
+  color: var(--main-dark-color);
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 8px;
@@ -46,7 +46,7 @@
   margin-bottom: 20px;
 }
 .modal-rating-rating {
-  color: #1b1b1b;
+  color: var(--main-dark-color);
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: 'DM Sans';
   font-size: 18px;
@@ -67,7 +67,7 @@
   overflow: hidden;
 }
 .modal-rating-svg-star {
-  fill: rgba(27, 27, 27, 0.2);
+  fill: var(--main-dark-color);
 }
 .modal-rating-svg-star-gold {
   fill: #eea10c;
@@ -75,8 +75,8 @@
 
 .modal-rating-email {
   border-radius: 30px;
-  border: 1px solid rgba(27, 27, 27, 0.4);
-  color: rgba(27, 27, 27, 0.6);
+  border: 1px solid var(--main-dark-color);
+  color: var(--main-dark-color);
   background-color: transparent;
   font-family: 'DM Sans';
   font-size: 14px;
@@ -94,13 +94,13 @@
 }
 .modal-rating-email:hover,
 .modal-rating-email:focus {
-  border: 2px solid #1b1b1b;
+  border: 2px solid var(--main-dark-color);
 }
 .modal-rating-comment {
   width: 295px;
   height: 93px;
   border-radius: 15px;
-  border: 1px solid rgba(27, 27, 27, 0.4);
+  border: 1px solid var(--main-dark-color);
   background-color: transparent;
   resize: none;
   padding: 12px 14px;
@@ -110,7 +110,7 @@
 }
 .modal-rating-comment:hover,
 .modal-rating-comment:focus {
-  border: 2px solid #1b1b1b;
+  border: 2px solid var(--main-dark-color);
 }
 .modal-rating-btn {
   height: 42px;

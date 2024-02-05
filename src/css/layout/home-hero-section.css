@@ -47,7 +47,7 @@
 
 .hero-second-container {
   height: 365px;
-  background-color: #ffffff;
+  background-color: var(--main-cont-background);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@
   letter-spacing: -2px;
   line-height: 50px;
   font-weight: normal;
-  color: #1b1b1b;
+  color: var(--main-dark-color);
   font-size: 56px;
   margin-bottom: 20px;
   padding-left: 20px;
@@ -74,7 +74,7 @@
   font-style: italic;
 }
 .hero-second-container-text {
-  color: #1b1b1b;
+  color: var(--main-dark-color);
   line-height: 18px;
   font-size: 14px;
   padding-left: 20px;
@@ -83,7 +83,7 @@
 
 .hero-third-container {
   position: relative;
-  background-color: #7e847f;
+  background: var(--gray-main-background);
   color: #ffffff;
   border-radius: 30px;
   display: flex;

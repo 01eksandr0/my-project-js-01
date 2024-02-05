@@ -1,5 +1,5 @@
 .favorites-exercise-section {
-  background-color: #e8e8e8;
+  background-color: var(--main-cont-background);
   border-radius: 30px;
   margin-bottom: 16px;
   opacity: 1;
@@ -23,7 +23,7 @@
 }
 .favorites-exercise-title {
   text-align: start;
-  color: #000000;
+  color: var(--main-dark-color);
   font-weight: 400;
   line-height: 32px;
   font-size: 32px;
@@ -43,7 +43,7 @@
   line-height: 18px;
   font-size: 14px;
   font-weight: 400;
-  color: #000000;
+  color: var(--main-dark-color);
   text-align: center;
   padding: 0 45px 0 45px;
 }

@@ -1,5 +1,5 @@
 .render-page-one {
-  background-color: #e8e8e8;
+  background-color: var(--main-cont-background);
   border-radius: 30px;
   padding: 40px 0;
   display: flex;
@@ -13,7 +13,7 @@
 }
 
 .render-page-one-title {
-  color: #1b1b1b;
+  color: var(--main-dark-color);
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;
@@ -22,7 +22,7 @@
   margin-bottom: 20px;
 }
 .render-page-one-title-part {
-  color: rgba(27, 27, 27, 0.5);
+  color: var(--main-dark-color);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -125,7 +125,7 @@
 }
 .render-pagination-btn,
 .render-pagination-btn-search {
-  color: rgba(27, 27, 27, 0.4);
+  color: var(--main-dark-color);
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 0.8px;
@@ -136,9 +136,9 @@
   justify-content: center;
 }
 .render-pagination-btn-active {
-  color: #1b1b1b;
+  color: var(--main-dark-color);
   border-radius: 50%;
-  border: 1px solid #1b1b1b;
+  border: 1px solid var(--main-dark-color);
   height: 32px;
   width: 32px;
   flex-shrink: 0;

@@ -14,7 +14,7 @@
 .modal-trane {
   width: 335px;
   border-radius: 20px;
-  background-color: #f6f6f6;
+  background-color: var(--workout-backgroun);
   padding: 40px 20px;
   position: relative;
 }
@@ -27,6 +27,10 @@
   position: absolute;
   top: 14px;
   right: 14px;
+}
+.modal-trane-btn-close > svg {
+  fill: var(--main-dark-color);
+  stroke: var(--main-dark-color);
 }
 .modal-trane-img-container {
   display: flex;
@@ -46,7 +50,7 @@
   margin-bottom: 20px;
 }
 .modal-trane-title {
-  color: #1b1b1b;
+  color: var(--main-dark-color);
   font-size: 20px;
   line-height: 20px;
   margin-bottom: 10px;
@@ -58,7 +62,7 @@
   gap: 2px;
 }
 .modal-trane-ratind {
-  color: #1b1b1b;
+  color: var(--main-dark-color);
   font-size: 12px;
   line-height: 18px;
 }
@@ -74,22 +78,22 @@
   gap: 20px;
   padding: 10px 0;
   margin-bottom: 20px;
-  border-top: 1px solid rgba(27, 27, 27, 0.2);
-  border-bottom: 1px solid rgba(27, 27, 27, 0.2);
+  border-top: 1px solid var(--main-dark-color);
+  border-bottom: 1px solid var(--main-dark-color);
 }
 .modal-trane-title-information {
-  color: rgba(27, 27, 27, 0.4);
+  color: var(--main-dark-color);
   font-size: 12px;
   line-height: 18px;
 }
 .modal-trane-information-text {
-  color: #1b1b1b;
+  color: var(--main-dark-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
 }
 .modal-trane-text {
-  color: rgba(27, 27, 27, 0.6);
+  color: var(--main-dark-color);
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 40px;
@@ -118,8 +122,9 @@
 }
 .modal-trane-btn-rating {
   border-radius: 30px;
-  border: 1px solid #1b1b1b;
+  border: 1px solid var(--main-dark-color);
   background-color: transparent;
+  color: var(--main-dark-color);
   width: 295px;
   height: 42px;
   display: flex;

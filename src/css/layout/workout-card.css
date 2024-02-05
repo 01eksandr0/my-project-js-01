@@ -1,7 +1,7 @@
 .workout-card__block {
   width: calc(100vw - 72px);
   border-radius: 15px;
-  background-color: #ffffff;
+  background-color: var(--workout-backgroun);
   padding: 15px;
 }
 .workout-card__button-workout {
@@ -71,7 +71,7 @@
   align-items: center;
   margin-left: 16px;
   font-size: 12px;
-  color: #1b1b1b;
+  color: var(--main-dark-color);
   padding-top: 4px;
 }
 
@@ -84,7 +84,8 @@
 .workout-card__basket-icon {
   width: 16px;
   height: 16px;
-  fill: #1b1b1b;
+  fill: var(--main-dark-color);
+  stroke: var(--main-dark-color);
 }
 
 .workout-card__link-start {
@@ -92,7 +93,9 @@
   border: none;
   background-color: transparent;
   align-items: center;
-  color: #1b1b1b;
+  color: var(--main-dark-color);
+  fill: var(--main-dark-color);
+  stroke: var(--main-dark-color);
 }
 
 .workout-card__link-start {
@@ -106,8 +109,8 @@
 }
 
 .workout-card__link-icon {
-  stroke: #1b1b1b;
-  fill: #1b1b1b;
+  fill: var(--main-dark-color);
+  stroke: var(--main-dark-color);
   pointer-events: none;
 }
 
@@ -130,7 +133,7 @@
   align-items: center;
 
   font-weight: 400;
-  color: #1b1b1b;
+  color: var(--main-dark-color);
 }
 
 @media screen and (min-width: 375px) {
@@ -174,23 +177,13 @@
 
 .workout-card__statistic_text {
   font-size: 12px;
-  color: #1b1b1b;
+  color: var(--main-dark-color);
 }
 
 .secondary-color-text {
-  color: rgb(27, 27, 27, 0.4);
+  color: var(--main-dark-color);
 }
 
 :disabled {
   cursor: default;
 }
-
-/* .is-active-page {
-  font-size: 24px;
-  color: #1b1b1b;
-  width: 32px;
-  height: 32px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #1b1b1b;
-  border-radius: 50px;
-} */
