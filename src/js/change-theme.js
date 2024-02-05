@@ -20,7 +20,7 @@ function saveOrRemoveThemeLocalStorage() {
 }
 async function addDarkStyles() {
   const link =
-    await `<link rel="stylesheet" href="./css/layout/dark-theme.css" id='dynamicStyles'>`;
+    await `<link rel="stylesheet" href="../css/layout/dark-theme.css" id='dynamicStyles'>`;
   document.querySelector('head').insertAdjacentHTML('afterend', link);
 }
 function loadTheme() {
