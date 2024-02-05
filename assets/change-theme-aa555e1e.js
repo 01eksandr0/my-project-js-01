@@ -10,7 +10,7 @@ import{a as E,i as m}from"./vendor-0a7943b3.js";(function(){const e=document.cre
                 <svg height="18" width="18">
                   <use href="${o}"></use>
                 </svg>
-              </li>`,"")},W=async t=>{const e=document.querySelector(".modal-trane-background"),a=JSON.parse(localStorage.getItem("favorites"))||[],{data:{gifUrl:s,name:n,rating:o,target:r,bodyPart:u,equipment:$,popularity:q,burnedCalories:w}}=await f.getCartById(t),L=a.includes(t)?"Remove&nbsp;to&nbsp;favorites&nbsp;":"Add&nbsp;to&nbsp;favorites&nbsp;",x=`<div class="modal-trane">
+              </li>`,"")},W=async t=>{const e=document.querySelector(".modal-trane-background"),a=JSON.parse(localStorage.getItem("favorites"))||[],{data:{gifUrl:s,name:n,rating:o,target:r,bodyPart:u,equipment:q,popularity:S,burnedCalories:w}}=await f.getCartById(t),L=a.includes(t)?"Remove&nbsp;to&nbsp;favorites&nbsp;":"Add&nbsp;to&nbsp;favorites&nbsp;",x=`<div class="modal-trane">
     <button class="modal-trane-btn-close" type="button">
       <svg height="28" width="28" style="stroke: black">
         <use href="${i}#icon-x"></use>
@@ -38,11 +38,11 @@ import{a as E,i as m}from"./vendor-0a7943b3.js";(function(){const e=document.cre
         </li>
         <li>
           <p class="modal-trane-title-information">Equipment</p>
-          <p class="modal-trane-information-text">${$}</p>
+          <p class="modal-trane-information-text">${q}</p>
         </li>
         <li>
           <p class="modal-trane-title-information">Popular</p>
-          <p class="modal-trane-information-text">${q}</p>
+          <p class="modal-trane-information-text">${S}</p>
         </li>
         <li>
           <p class="modal-trane-title-information">Burned calories</p>
@@ -64,5 +64,5 @@ import{a as E,i as m}from"./vendor-0a7943b3.js";(function(){const e=document.cre
         </li>
       </ul>
     </div>
-  </div>`;e.innerHTML=x},N=document.querySelector(".burger-menu-block"),P=document.querySelector(".button-burger"),J=document.querySelector(".burger-menu__btn-close"),Q=document.body,S=()=>{N.classList.toggle("is-hidden"),Q.classList.toggle("no-scroll")};P.addEventListener("click",S);J.addEventListener("click",S);const b=document.querySelector(".hero-third-container-text")||document.querySelector(".favorite-quote__text"),h=document.querySelector(".hero-third-container-author")||document.querySelector(".favorite-quote__autor"),g="key-quote",V=async()=>{if((await JSON.parse(localStorage.getItem(g))||[]).date!==`${new Date().getDate()}:${new Date().getMonth()+1}:${new Date().getFullYear()}`){const e=await f.getQuote(),a={author:e.data.author,quote:e.data.quote,date:`${new Date().getDate()}:${new Date().getMonth()+1}:${new Date().getFullYear()}`};localStorage.setItem(g,JSON.stringify(a)),b.textContent=a.quote,h.textContent=a.author}else{const e=JSON.parse(localStorage.getItem(g));b.textContent=e.quote,h.textContent=e.author}},Y=document.querySelector(".change"),H=document.querySelector("#dynamicStyles");Y.addEventListener("click",()=>{console.log(H.href)});export{c as a,j as b,f as c,W as g,z as h,i,V as n,G as o,K as s};
-//# sourceMappingURL=change-theme-9d7c1208.js.map
+  </div>`;e.innerHTML=x},N=document.querySelector(".burger-menu-block"),P=document.querySelector(".button-burger"),J=document.querySelector(".burger-menu__btn-close"),Q=document.body,$=()=>{N.classList.toggle("is-hidden"),Q.classList.toggle("no-scroll")};P.addEventListener("click",$);J.addEventListener("click",$);const b=document.querySelector(".hero-third-container-text")||document.querySelector(".favorite-quote__text"),h=document.querySelector(".hero-third-container-author")||document.querySelector(".favorite-quote__autor"),g="key-quote",V=async()=>{if((await JSON.parse(localStorage.getItem(g))||[]).date!==`${new Date().getDate()}:${new Date().getMonth()+1}:${new Date().getFullYear()}`){const e=await f.getQuote(),a={author:e.data.author,quote:e.data.quote,date:`${new Date().getDate()}:${new Date().getMonth()+1}:${new Date().getFullYear()}`};localStorage.setItem(g,JSON.stringify(a)),b.textContent=a.quote,h.textContent=a.author}else{const e=JSON.parse(localStorage.getItem(g));b.textContent=e.quote,h.textContent=e.author}},Y=document.querySelector(".change"),H=document.querySelector("#dynamic-styles");Y.addEventListener("click",()=>{console.log(H.href)});export{c as a,j as b,f as c,W as g,z as h,i,V as n,G as o,K as s};
+//# sourceMappingURL=change-theme-aa555e1e.js.map
