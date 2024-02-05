@@ -1,14 +1,7 @@
 const changeThemeBtn = document.querySelector('.change');
-// console.log(changeThemeBtn);
-
 const changeThemeBtnFavorit =
   document.querySelector('.page-link') || document.querySelector('.change');
-// console.log(changeThemeBtnFavorit);
-
 const oldImg = document.querySelector('.collection-img');
-
-// console.log(originalValue);
-
 function onClickBtn() {
   const darkTheme = document.getElementById('dynamicStyles');
   if (!darkTheme) {
@@ -16,11 +9,8 @@ function onClickBtn() {
   } else {
     darkTheme.remove();
   }
-
   saveOrRemoveThemeLocalStorage();
-  //   changeImgFaforiteSection();
 }
-
 function saveOrRemoveThemeLocalStorage() {
   if (changeThemeBtn.checked) {
     localStorage.setItem('darkThemeActivated', 'true');
@@ -28,28 +18,24 @@ function saveOrRemoveThemeLocalStorage() {
     localStorage.removeItem('darkThemeActivated');
   }
 }
-
-function addDarkStyles() {
-  const link = `<link rel="stylesheet" href="/css/layout/dark-theme.css" id='dynamicStyles'>`;
+async function addDarkStyles() {
+  const link =
+    await `<link rel="stylesheet" href="/css/layout/dark-theme.css" id='dynamicStyles'>`;
   document.querySelector('head').insertAdjacentHTML('afterend', link);
 }
-
 function loadTheme() {
   const darkThemeActivated = localStorage.getItem('darkThemeActivated');
   if (darkThemeActivated === 'true') {
     addDarkStyles();
   }
 }
-
 function loadCheckboxState() {
   const savedCheckboxState = localStorage.getItem('darkThemeActivated');
   changeThemeBtn.checked = savedCheckboxState === 'true';
 }
-
 function checkAndSaveCheckbox() {
   localStorage.setItem('darkThemeActivated', changeThemeBtn.checked.toString());
 }
-
 window.onload = function () {
   loadTheme();
   loadCheckboxState();

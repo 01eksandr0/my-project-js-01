@@ -26,4 +26,27 @@ const getQuote = async () => {
   }
 };
 
-export const allApi = { getFilters, getWorkout, getQuote };
+const getCartById = async id => {
+  try {
+    const response = await apiInstance.get(`exercises/${id}`);
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const getResultPatchRating = async (id, object) => {
+  try {
+    const response = await apiInstance.patch(`exercises/${id}/rating`, object);
+    return response.status;
+  } catch (error) {
+    return error.response.status;
+  }
+};
+export const allApi = {
+  getFilters,
+  getWorkout,
+  getQuote,
+  getCartById,
+  getResultPatchRating,
+};
