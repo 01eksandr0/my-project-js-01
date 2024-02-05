@@ -1,5 +1,5 @@
 const changeThemeBtn = document.querySelector('.change');
-const link = document.querySelector('#dynamicStyles');
+const link = document.querySelector('#dynamic-styles');
 changeThemeBtn.addEventListener('click', () => {
   console.log(link.href);
 });
