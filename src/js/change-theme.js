@@ -2,7 +2,7 @@ const changeThemeBtn = document.querySelector('.change');
 
 const changeTheme = () => {
   const link = document.getElementById('change');
-  link.href = './css/layout/dark-theme.css';
+  console.log(link.getAttribute('href'));
 };
 
 changeThemeBtn.addEventListener('click', changeTheme);
