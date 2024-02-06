@@ -1,5 +1,9 @@
 const body = document.body;
-const change = document.querySelector('.change');
+
+const change =
+  parseInt(getComputedStyle(body).width) > 768
+    ? document.querySelector('.change')
+    : document.querySelector('.change-modal');
 
 const checkTheme = () => {
   if (JSON.parse(localStorage.getItem('theme'))) {
